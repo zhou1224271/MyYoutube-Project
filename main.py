@@ -11,7 +11,7 @@ def parse(qs):
 
 def main():
     resp = requests.get('https://www.youtube.com/get_video_info?video_id={}'.format(VID))
-    parse(resp.content)
+    parse(resp.text)
 
 if name == "main" :
     main()
