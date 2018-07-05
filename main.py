@@ -1,1 +1,3 @@
-print("Hello")
+import requests
+
+print(dir(requests))
